@@ -1,0 +1,578 @@
+/* Global Settings */
+html {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === HEADER & NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px;
+  background-color: #000;
+  color: white;
+  position: relative;
+  z-index: 10;
+  height: 83px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(40px);
+}
+
+/* Bagi tiga bagian: kiri - tengah - kanan */
+
+/* Logo Tech di kiri */
+div.logo {
+  gap: 8px;
+  opacity: 1;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+/* Menu di tengah dan terpusat */
+div.navbar-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.navbar-center > nav > ul > li > a:hover {
+  color: #7a5fff;
+}
+
+/* CONTACT US BUTTON */
+div.navbar-right > a:hover {
+  color: #7a5fff;
+}
+
+/*cek boldness !!!*/
+.contact-us {
+  background-color: #421abc;
+  padding: 16px;
+  border-radius: 9999px;
+  width: 160px;
+  height: 44px;
+  padding: 8px 24px;
+  margin: top 30px;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  padding: 0 140px;
+  background: linear-gradient(#000, #210a5e4d 30%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 140px;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 18px;
+}
+/* Build with The Future */
+.hero-content {
+  color: white;
+  flex-basis: 687px;
+  gap: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.hero-text {
+  gap: 16px;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.hero-text i {
+  color: #fdfdfd;
+  font-style: italic;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #717680;
+  line-height: 28px;
+  text-align: left;
+}
+
+.btn-hero {
+  margin-top: 20px;
+}
+
+/* "Let's Talk" Button */
+.hero-content a {
+  background-color: #421abc;
+  color: #fff;
+  width: 300px;
+  height: 48px;
+  padding: 8px 24px;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  border: none;
+  display: flex;
+  border-radius: 9999px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  gap: 4px;
+}
+
+.hero-text a:hover {
+  background-color: #333;
+}
+
+/* WHO WE ARE */
+
+.section-who-we-are {
+  flex-direction: column;
+  display: flex;
+  padding: 80px 140px;
+  text-align: center;
+  line-height: 56px;
+  gap: 32px;
+  font-size: 32px;
+}
+
+.section-who-we-are > h2 {
+  text-align: center;
+  line-height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.section-who-we-are p {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #717680;
+  line-height: 42px;
+}
+
+.section-who-we-are p strong {
+  color: white;
+}
+/* WHAT WE DO */
+
+.section-what-we-do {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 140px;
+  line-height: 30px;
+  gap: 64px;
+}
+
+.section-what-we-do h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+/*font family body, style regular, weight 400px, f.size large, line-H 32px
+align-text center, color "p" #717680*/
+.section-what-we-do .text p {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-size: large;
+  color: #717680;
+}
+
+/* SERVICES - WHAT WE DO (dengan 6 gambar Icon) 
+left& rightnya container diadjust, */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 64px;
+  margin-top: 45px;
+}
+
+.card {
+  align-items: center;
+  border: 1px solid #181d27;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  text-align: center;
+}
+
+.card img {
+  height: auto;
+  width: 48px;
+}
+
+.card .description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card .description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.card .description p {
+  color: #717680;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* -- PORTFOLIO -- */
+/* -- OUR WORK -- */
+section .section .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 140px;
+  line-height: 32px;
+}
+.section .text > h2 {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.section .text p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #717680;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+/* PORTFOLIO IMAGES */
+.work {
+  display: grid;
+  gap: 64px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 28px;
+}
+
+.work-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*kok gambarnya gede banget? */
+.work-grid img {
+  border-radius: 16px;
+}
+
+.work-grid h3 {
+  font-size: 20px;
+  text-align: left;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+/* -- TEAM MEMBERS --*/
+.section-team {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 30px;
+  gap: 32px;
+}
+/* MEET the TEAM  
+kenapa ga ngefek juga size and stylenya??*/
+.section-team .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 30px;
+  gap: 32px;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.section-team .text p {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #717680;
+}
+
+/* -- TEAM MEMBERS -- 
+bikin jeda sama judul meet the team biar ga nempel banget*/
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: space-around;
+}
+
+.card-team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 220px;
+}
+
+/* -- CONTACT FORM -- 
+ -- LET'S COLLABORATE (adjust gap/margin)-- */
+.section-collaborate {
+  text-align: center;
+}
+
+.section-collaborate .text h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 30px;
+  gap: 32px;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.section-collaborate .text p {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #717680;
+}
+/* Cek input form and adjust layout and color 
+
+/* -- INPUT FORM --*/
+.contact-form {
+  margin: 0 auto;
+  width: 592px;
+}
+
+.contact-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.input-fields .input-field label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.input-fields .field {
+  background: none;
+  border: 1px solid #252b37;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 8px 16px;
+}
+
+.contact-form button {
+  background: #421abc;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  flex-basis: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  width: 592px;
+  height: 48px;
+  color: #fff;
+}
+
+/* ========== Footer ========== */
+footer {
+  border-top: 1px solid #181d27;
+  padding: 24px 8px;
+}
+
+footer p {
+  color: #717680;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* MOBILE MENU RESPONSIVE */
+
+/* ===== MOBILE 768px Screen ===== */
+@media only screen and (max-width: 768px) {
+  /* --- GLOBAL SETTINGS --- */
+  /* ---- HEADER ---- */
+  header {
+    border: none;
+    height: 36px;
+    padding: 14px 16px;
+  }
+
+  header .logo {
+    flex-basis: 65px;
+    height: 36px;
+  }
+  .navbar {
+    padding: 13.5px 13.5px;
+    height: 36px;
+  }
+  .mobile-menu-icon {
+    text-align: right;
+  }
+
+  div.navbar-center,
+  .contact-us {
+    display: none;
+    width: 394;
+    height: 64;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    background: url("../assets/images/hamburger-icon.png");
+    background-size: 100% 100%;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-right {
+    flex-grow: 1;
+  }
+
+  /* ----  HERO / BUILD YOUR FUTURE---- */
+  .hero {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+
+  .hero-content .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-content {
+    flex-basis: auto;
+  }
+
+  /* --- WHO WE ARE ---*/
+  .section-who-we-are {
+    padding: 40px 20px;
+  }
+  .section-who-we-are p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .section-who-we-are > h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  /* --- WHO WE DO ---*/
+  .section-what-we-do {
+    gap: 24px;
+  }
+  .section-what-we-do {
+    gap: 8px;
+    padding: 40px 16px;
+  }
+  .section-what-we-do .text p {
+    font-size: 14px;
+  }
+
+  /* --- SERVICE - WHO WE DO ---*/
+  /* kenapa belum tertampil seperti 2,1fr?*/
+
+  .service-grid .card {
+    grid-template-columns: repeat (2, 1fr);
+    gap: 16px;
+    padding-top: 40px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+  .section {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    gap: 24px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* -- MEET MY TEAM */
+  .section-team {
+    gap: 8px;
+  }
+  .team-members {
+    display: flex;
+    flex-direction: row;
+  }
+}
